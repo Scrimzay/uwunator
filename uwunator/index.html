@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cc95d6ee0c.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        background-image: url("https://i.ibb.co/xHc3nP2/uwunatorbg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* Optional for a fixed background */
+        font-family: Arial, sans-serif; /* Set your preferred font */
+        color: #fff; /* Set your preferred text color */
+        }
+
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background: none; /* Remove the background */
+            padding: 0; /* Remove padding */
+            border: none; /* Remove border */
+        }
+
+        form label,
+        form input {
+            display: block;
+            margin: 10px 0; /* Adjust the margin as needed */
+        }
+
+        form input[type="text"] {
+            width: 100%; /* Make the input field expand to the full width */
+            padding: 20px; /* Increase the padding for larger input */
+            font-size: 16px; /* Set the font size */
+            border: none; /* Remove the input field border */
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the input field */
+            color: #fff; /* Set text color for the input field */
+            border-radius: 10px;
+        }
+
+        form input[type="submit"] {
+            background-color: #007bff; /* Set your preferred button background color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 93px;
+        }
+        .form-container {
+        text-align: center; /* Center the form horizontally */
+        }
+    
+        .output-text {
+        text-align: center; /* Center the output text horizontally */
+        margin-top: -346px; /* Add space between the form and output */
+        color: black;
+        font-family: "Playpen Sans", sans-serif;
+        }
+
+        .output-container {
+            text-align: center; /* Center the output text horizontally */
+            background: rgb(245, 245, 245); /* Semi-transparent background for the output box */
+            color: #fff; /* Set text color for the output text */
+            max-width: 80%; /* Set a maximum width for the output box */
+            margin: 0 auto; /* Center the output box horizontally */
+        }
+
+    </style>
+    <title>The UwUnator</title>
+</head>
+<body>
+    <div class="center-container">
+        <form action="/" method="POST">
+            <label for="entry"></label>
+            <input type="text" id="entry" name="entry" value="">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="output-container">
+        <p class="output-text">{{.Output}}</p>
+    </div>
+</body>
+</html>
